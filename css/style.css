@@ -221,7 +221,7 @@ span {
 
 section.advantage {
     padding-top: 94px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 
     background-color:var(--bg-main-color);
 }
@@ -232,8 +232,10 @@ section.advantage {
 
     display: flex;
     justify-content:space-between;
+    flex-basis: 270px;
     list-style: none;
 }
+
 
 .advantage-list-item:not(:last-child) {
     margin-right: 30px;
@@ -261,8 +263,7 @@ section.advantage {
 
 section.service {
     background-color:var(--bg-main-color);
-    padding: 0;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .service-title {
@@ -316,17 +317,24 @@ ul.team-list {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+    
 }
 
 .team-list-item {
     list-style: none;
+    
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-item-descr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-item-name {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -338,8 +346,8 @@ ul.team-list {
 }
 
 .team-item-role {
-    margin-bottom: 30px;
-    margin-top: 0px;
+    /*margin-bottom: 30px;
+    margin-top: 0px;*/
 
     font-weight: 400;
     font-size: 16px;
@@ -361,7 +369,7 @@ span.alt-logo-color {
 .footer-logo {
     margin-top: 0;
     margin-bottom: 20px;
-    /*padding: 0;*/
+    
 }
 
 .adress-list-item {
@@ -395,7 +403,7 @@ span.alt-logo-color {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -406,7 +414,7 @@ span.alt-logo-color {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.17;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none;
@@ -440,6 +448,12 @@ section.portfolio {
 }
 
 .filtr-btn {
+    padding: 6px 22px;
+    
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: transparent;
+
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
